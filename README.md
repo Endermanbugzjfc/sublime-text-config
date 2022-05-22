@@ -8,7 +8,7 @@ Programming workspace setups. Similar to https://github.com/SOF3/nvim-config.
 
 ## Global
 
-| Feature                                    |                                       Hotkey                                       |                      Driven Plugin                       |
+| Feature                                    |                                       Hotkey                                       |                      Driver Plugin                       |
 | ------------------------------------------ | :--------------------------------------------------------------------------------: | :------------------------------------------------------: |
 | Vim like keys set with some customizations |                                         -                                          |     [Vintage](https://github.com/sublimehq/Vintage)      |
 | Open sidebar                               |                          <kbd>Command</kbd>+<kbd>`</kbd>                           |                            -                             | - [x] Open sidebar: |
@@ -28,7 +28,7 @@ Programming workspace setups. Similar to https://github.com/SOF3/nvim-config.
 
 ## Go
 
-| Feature                                   |                   Hotkey                    |                                       Driven Plugin                                       |     Driver File      |
+| Feature                                   |                   Hotkey                    |                                       Driver Plugin                                       |     Driver File      |
 | ----------------------------------------- | :-----------------------------------------: | :---------------------------------------------------------------------------------------: | :------------------: |
 | go.mod / go.sum files syntax highlighting |                      -                      |                    [Gomod](https://github.com/mitranim/sublime-gomod)                     |          -           |
 | Code linting                              | <kbd>Command</kbd>+<kbd>S</kbd> _(on save)_ | [SublimeLinter-golangcilint](https://github.com/SublimeLinter/SublimeLinter-golangcilint) | $GOBIN/golangci-lint |
