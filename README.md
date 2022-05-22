@@ -34,3 +34,7 @@ Programming workspace setups. Similar to https://github.com/SOF3/nvim-config.
 | Code linting                              | <kbd>Command</kbd>+<kbd>S</kbd> _(on save)_ | [SublimeLinter-golangcilint](https://github.com/SublimeLinter/SublimeLinter-golangcilint) | $GOBIN/golangci-lint |
 | Code formatting                           | <kbd>Command</kbd>+<kbd>S</kbd> _(on save)_ |                     [GoFmt](https://github.com/noonat/sublime-gofmt)                      |  $GOROOT/goimports   |
 | Go function definition                    |               Same as global                |                        [GoGuru](http://alvarolm.github.io/GoGuru)                         |     $GOBIN/guru      |
+# Vim
+| Feature                                    |                                       Hotkey                                       |                      Driven Plugin                       |
+| --------- | -------- | ------- |
+| Permanently disabling all possbile methods to exit Vim which prevents me from being lazy | Vim Normal Mode: <kbd>:</kbd>, <kbd>q</kbd>, <kbd>Enter</kbd> | [https://github.com/Endermanbugzjfc/IDESleeperUltimate](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
