@@ -1,0 +1,84 @@
+{
+	// For gutter icons:
+	// brew install imagemagick
+	// brew install ghostscript
+    "file_extensions": ["all"],
+	"ha_style": "filled",
+    "search_colors_in":
+    {
+		"all_content":
+		{
+			"color_highlighters":
+			{
+				"color_scheme":
+				{
+					"enabled": true,
+					"highlight_style": "underlined_squiggly",
+				},
+				"gutter_icons":
+				{
+					"enabled": true,
+					"icon_style": "circle",
+				},
+				"phantoms":
+				{
+					"enabled": false,
+					"length": 2,
+					"style": "right",
+				},
+			},
+			"enabled": true,
+		},
+		"hover":
+		{
+			"color_highlighters":
+			{
+				"color_scheme":
+				{
+					"enabled": true,
+					"highlight_style": "filled",
+				},
+				"gutter_icons":
+				{
+					"enabled": false,
+					"icon_style": "circle",
+				},
+				"phantoms":
+				{
+					"enabled": false,
+					"length": 2,
+					"style": "right",
+				},
+			},
+			"enabled": true,
+		},
+		"selection":
+		{
+			"color_highlighters":
+			{
+				"color_scheme":
+				{
+					"enabled": true,
+					"highlight_style": "filled",
+				},
+				"gutter_icons":
+				{
+					"enabled": true,
+					"icon_style": "circle",
+				},
+				"phantoms":
+				{
+					"enabled": true,
+					"length": 2,
+					"style": "right",
+				},
+			},
+			"enabled": true,
+		},
+	},
+	"experimental":
+	{
+		"asynchronosly_update_color_scheme": false,
+	},
+	"icon_factory.convert_command": "/usr/local/bin/convert"
+}

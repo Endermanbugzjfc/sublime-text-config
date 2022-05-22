@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+services:
+  pocketmine:
+    build: .
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    ports:
+      - 19132:19132/tcp
+      - 19132:19132/udp
+    volumes:
+      - "/Users/Eurus/Documents/Dev/PocketMine-MP/4/pocketmine.yml:/data/pocketmine.yml"
+      - "/Users/Eurus/Documents/Dev/PocketMine-MP/4/worlds/world:/data/worlds/world"
+      - "/Users/Eurus/Documents/Dev/PocketMine-MP/4/plugin_data/FakePlayer/players.json:/data/plugin_data/FakePlayer/players.json"
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,34 @@
+[{
+		"caption": "Composer Init",
+		"command": "exec",
+		"args": {
+			"shell_cmd": "php ~/U/exe/ComposerInit.php"
+		}
+}, {	"caption": "Test",
+	"command": "exec",
+	"args": {
+		"shell_cmd": "echo {$project}"
+	}
+},
+
+	{
+		"caption": ":! 🇭🇰 光復香港 時代革命 五大訴求 缺一不可 🇺🇦",
+		"command": "close_other_tabs",
+	},
+
+	// {
+	// "caption": "Goto",
+	// "command": "show_overlay",
+	// "args": {
+	// "overlay": "goto",
+	// "text": ":"
+	// }
+	// },
+
+	// Plugin commands that was not registered
+	{
+		"caption": "Select Next Number",
+		"command": "select_next_number"
+	}
+
+]

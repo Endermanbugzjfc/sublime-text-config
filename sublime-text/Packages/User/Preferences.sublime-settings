@@ -1,0 +1,30 @@
+{
+	"font_size": 26,
+	"theme": "Adaptive.sublime-theme",
+	"ignored_packages":
+	[
+		"Align Arguments",
+		"CompletePHP", // Lags intellisense.
+		"QColor", // Breaks Vintage.
+		"Statusbar Path",
+		"SublimeCodeIntel", // Lags the whole app.
+/*"SublimeCodeIntel",*/
+/*"SublimeCodeIntel",*/
+/*"SublimeCodeIntel",*/
+/*"Theme - Solarized Flat",*/
+	],
+	"color_scheme": "Solarized (light).sublime-color-scheme",
+
+	// Vim behaviours:
+	"relative_line_numbers": true, // Since Sublime build 4074.
+
+	"preview_on_click": false, // Not compatible with SideBarHider.
+
+	"remember_full_screen": true,
+
+	"index_exclude_gitignore": false, // I want PHPCompanion to index the vendor folder.
+
+	"vintage_start_in_command_mode": true,
+
+	"word_wrap": true,
+}

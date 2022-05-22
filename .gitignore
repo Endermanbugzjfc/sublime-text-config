@@ -1,0 +1,10 @@
+# Ignore everything:
+*
+
+# Except for:
+
+!.gitignore
+!sublime-text/
+!sublime-text/Packages/
+!sublime-text/Packages/User/
+!sublime-text/Packages/User/*.*

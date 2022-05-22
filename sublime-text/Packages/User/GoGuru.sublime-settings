@@ -1,0 +1,9 @@
+{
+	"goguru_use_golangconfig": true,
+	"goguru_debug": true,
+	// "goguru_output": "output_panel",
+	"goguru_jumpto_definition": true,
+	"guru_scope": [
+		"/Volumes/NO NAME/dev/gopath/pkg/mod"
+	]
+}

@@ -1,0 +1,66 @@
+// SublimeLinter Settings - User
+{
+    "debug": true,
+    "paths": {
+        "linux": [
+            "/home/eurus/app/gobin/golangci-lint",
+            "/media/eurus/U/.composer/vendor/bin/php-cs-fixer",
+        ],
+        "osx": [
+            "/media/eurus/U/.composer/vendor/phpstan/phpstan/phpstan",
+        	// "/Users/Eurus/.composer/vendor/phpstan/phpstan",
+            "/Users/Eurus/U/.composer/vendor/phpstan/phpstan",
+            "/Users/Eurus/.composer/vendor/squizlabs/php_codesniffer/bin"
+        ],
+        "windows": []
+    },
+    // Available gutter themes:
+    // - Blueberry Cross
+    // - Blueberry Round
+    // - Circle
+    // - Danish Royalty
+    // - Default
+    // - Hands
+    // - Knob
+    // - Knob Symbol
+    // - Koloria
+    // - ProjectIcons
+    // Note that you may need to change the "icon" property in "styles"
+    // to an icon in the theme (they usually include "warning" and "error")
+    // ['fill', 'outline', 'solid_underline', 'squiggly_underline', 'stippled_underline', 'none']
+    "gutter_theme": "Default",
+    "linters": {
+        "phpstan": {
+            "styles": [
+                {
+                    "mark_style": "fill",
+                    "types": ["error"]
+                }
+            ]
+        },
+        "phpcs": {
+            "styles": [
+                {
+                    "mark_style": "fill",
+                    "types": ["error"]
+                }
+            ],
+            "args": [
+                // "--config .php-cs-fixer.dist.php"
+                // "--config \"/Users/Eurus/Documents/Dev/PocketMine-MP/projects/Capital/.php-cs-fixer.dist.php\""
+            ]
+        },
+        "golangcilint": {
+            "styles": [
+                {
+                    "mark_style": "fill",
+                    "types": ["error", "warning"]
+                }
+            ],
+            "args": [
+                
+            ]
+        }
+    }
+
+}

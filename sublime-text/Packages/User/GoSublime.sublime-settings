@@ -1,0 +1,19 @@
+{
+    "env": {
+        "GOPATH": "/media/eurus/U/dev/gopath",
+        "gopath": "/media/eurus/U/dev/gopath",
+        "GS_GOPATH": "/media/eurus/U/dev/gopath",
+        "gs_gopath": "/media/eurus/U/dev/gopath",
+        "GO111MODULE": "off"
+    },
+    "export_env_vars": [
+        "GOPATH",
+        "gopath",
+        "GS_GOPATH",
+        "gs_gopath",
+        "GO111MODULE",
+    ],
+    "use_gs_gopath": false,
+    "autosave": false,   
+    "fmt_cmd": ["goimports", "-srcdir", "$_dir"],
+}

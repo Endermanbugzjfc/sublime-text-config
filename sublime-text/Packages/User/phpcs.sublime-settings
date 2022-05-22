@@ -1,0 +1,7 @@
+{
+    "show_debug": true,
+	"php_cs_fixer_executable_path": "/Users/Eurus/.composer/vendor/bin/php-cs-fixer",
+	"phpcs_execute_on_save": true,
+    "php_cs_fixer_on_save": true,
+    "php_cs_fixer_show_quick_panel": true,
+}

@@ -1,0 +1,414 @@
+[
+	// IntelliJ behaviours:
+	{
+		"keys": ["ctrl+shift+c"],
+		"command": "copy_path"
+	},
+
+	// Sidebar:
+	{
+		"keys": ["h"],
+		"command": "move",
+		"args": {
+			"by": "characters",
+			"forward": false
+		},
+		"context": [{
+			"key": "control",
+			"operand": "sidebar_tree"
+		}]
+	}, {
+		"keys": ["j"],
+		"command": "move",
+		"args": {
+			"by": "lines",
+			"forward": true
+		},
+		"context": [{
+			"key": "control",
+			"operand": "sidebar_tree"
+		}]
+	}, {
+		"keys": ["k"],
+		"command": "move",
+		"args": {
+			"by": "lines",
+			"forward": false
+		},
+		"context": [{
+			"key": "control",
+			"operand": "sidebar_tree"
+		}]
+	}, {
+		"keys": ["l"],
+		"command": "move",
+		"args": {
+			"by": "characters",
+			"forward": true
+		},
+		"context": [{
+			"key": "control",
+			"operand": "sidebar_tree"
+		}]
+	}, {
+		"keys": ["super+`"],
+		"command": "focus_side_bar"
+	}, {
+		"keys": ["super+`"],
+		"command": "toggle_side_bar",
+		"context": [{
+			"key": "control",
+			"operand": "sidebar_tree"
+		}]
+	}, {
+		"keys": ["escape"],
+		"command": "toggle_side_bar",
+		"context": [{
+			"key": "control",
+			"operand": "sidebar_tree"
+		}]
+	},
+
+	// Fast navigate: (arrow keys are so hard to reach on MacBook)
+	{
+		"keys": ["ctrl+d"],
+		"command": "move",
+		"args": {
+			"by": "lines",
+			"forward": true
+		},
+		"context": [{
+			"key": "overlay_visible",
+			"operator": "equal",
+			"operand": true
+		}]
+	}, {
+		"keys": ["ctrl+s"],
+		"command": "move",
+		"args": {
+			"by": "lines",
+			"forward": false
+		},
+		"context": [{
+			"key": "overlay_visible",
+			"operator": "equal",
+			"operand": true
+		}]
+	}, {
+		"keys": ["alt+k"],
+		"command": "move",
+		"args": {
+			"by": "lines",
+			"forward": false,
+		},
+		"context": [{
+			"key": "auto_complete_visible",
+			"operator": "equal",
+			"operand": true
+		}]
+	}, {
+		"keys": ["alt+j"],
+		"command": "move",
+		"args": {
+			"by": "lines",
+			"forward": true,
+		},
+		"context": [{
+			"key": "auto_complete_visible",
+			"operator": "equal",
+			"operand": true
+		}]
+	},
+
+	// My customizations:
+	{
+		"keys": ["g", "t"],
+		"command": "focus_neighboring_group",
+		"args": {
+			"forward": false
+		},
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
+	}, {
+		"keys": ["alt+space"],
+		"command": "auto_complete"
+	}, {
+		"keys": ["ctrl+shift+s"],
+		"command": "select_lines",
+		"args": {
+			"forward": false
+		}
+	}, {
+		"keys": ["ctrl+shift+d"],
+		"command": "select_lines",
+		"args": {
+			"forward": true
+		}
+	}, {
+		"keys": ["K", "K"],
+		"command": "goto_definition",
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}, {
+			"key": "eol_selector",
+			"operator": "not_equal",
+			"operand": "source.go"
+		}],
+	}, {
+		"keys": ["K", "k"],
+		"command": "goto_reference",
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
+	}, {
+		"keys": ["ctrl+o"],
+		"command": "terminus_open",
+		"args": {
+			"cwd": "${file_path:${folder}}"
+		}
+	}, {
+		"keys": ["super+shift+s"],
+		"command": ""
+	}, {
+		"keys": ["K", "M"],
+		"command": "multicommand",
+		"args": {
+			"commands": [{
+				"command": "sublime_linter_goto_error",
+				"args": {
+					// "direction": "next",
+					"wrap": true
+				},
+			}, {
+				"command": "sublime_linter_line_report"
+			}]
+		},
+		"context": [{
+				"key": "setting.command_mode"
+			}, {
+				"key": "setting.is_widget",
+				"operand": false
+			}
+			// , {
+			// 	"key": "eol_selector",
+			// 	"operand": "source.php"
+			// }
+		]
+	}, {
+		"keys": ["super+k", "super+k"],
+		"command": "sublime_linter_line_report",
+	}, {
+		"keys": ["super+g"],
+		"command": "show_overlay",
+		"args": {
+			"overlay": "goto",
+			"text": ":"
+		}
+	}, {
+		"keys": ["super+;"],
+		"command": "multicommand",
+		"args": {
+			"commands": [{
+				"command": "googler"
+			}]
+		}
+	}, {
+		"keys": ["ctrl+escape"],
+		"command": "show_panel",
+		"args": {
+			"panel": "console",
+			"toggle": true
+		}
+	},
+
+	// PHP:
+	{
+		"keys": ["K", "J"],
+		"command": "find_use",
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}, {
+			"key": "eol_selector",
+			"operand": "source.php"
+		}]
+	}, {
+		"keys": ["K", "I"],
+		"command": "implement",
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}, {
+			"key": "eol_selector",
+			"operand": "source.php"
+		}]
+	},
+
+	// Go:
+	{
+		"keys": ["K", "K"],
+		"command": "multicommand",
+		"args": {
+
+			"commands": [{
+				"command": "find_under_expand"
+			}, {
+
+				"command": "go_guru",
+				"args": {
+					"mode": "definition"
+				},
+			}]
+		},
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}, {
+			"key": "eol_selector",
+			"operand": "source.go"
+		}],
+	},
+
+	// macOS behaviours:
+	{
+		"keys": ["alt+1"],
+		"command": "focus_group",
+		"args": {
+			"group": 0
+		}
+	}, {
+		"keys": ["alt+2"],
+		"command": "focus_group",
+		"args": {
+			"group": 1
+		}
+	}, {
+		"keys": ["alt+3"],
+		"command": "focus_group",
+		"args": {
+			"group": 2
+		}
+	}, {
+		"keys": ["alt+4"],
+		"command": "focus_group",
+		"args": {
+			"group": 3
+		}
+	}, {
+		"keys": ["alt+5"],
+		"command": "focus_group",
+		"args": {
+			"group": 4
+		}
+	}, {
+		"keys": ["alt+6"],
+		"command": "focus_group",
+		"args": {
+			"group": 5
+		}
+	}, {
+		"keys": ["alt+7"],
+		"command": "focus_group",
+		"args": {
+			"group": 6
+		}
+	}, {
+		"keys": ["alt+8"],
+		"command": "focus_group",
+		"args": {
+			"group": 7
+		}
+	}, {
+		"keys": ["alt+9"],
+		"command": "focus_group",
+		"args": {
+			"group": 8
+		}
+	}, {
+		"keys": ["ctrl+1"],
+		"command": "select_by_index",
+		"args": {
+			"index": 0
+		}
+	}, {
+		"keys": ["ctrl+2"],
+		"command": "select_by_index",
+		"args": {
+			"index": 1
+		}
+	}, {
+		"keys": ["ctrl+3"],
+		"command": "select_by_index",
+		"args": {
+			"index": 2
+		}
+	}, {
+		"keys": ["ctrl+4"],
+		"command": "select_by_index",
+		"args": {
+			"index": 3
+		}
+	}, {
+		"keys": ["ctrl+5"],
+		"command": "select_by_index",
+		"args": {
+			"index": 4
+		}
+	}, {
+		"keys": ["ctrl+6"],
+		"command": "select_by_index",
+		"args": {
+			"index": 5
+		}
+	}, {
+		"keys": ["ctrl+7"],
+		"command": "select_by_index",
+		"args": {
+			"index": 6
+		}
+	}, {
+		"keys": ["ctrl+8"],
+		"command": "select_by_index",
+		"args": {
+			"index": 7
+		}
+	}, {
+		"keys": ["ctrl+9"],
+		"command": "select_by_index",
+		"args": {
+			"index": 8
+		}
+	}, {
+		"keys": ["ctrl+0"],
+		"command": "select_by_index",
+		"args": {
+			"index": 9
+		}
+	}, {
+		"keys": ["ctrl+0"],
+		"command": "select_by_index",
+		"args": {
+			"index": 10
+		}
+	}, {
+		"keys": ["ctrl+`"],
+		"command": "focus_side_bar"
+	},
+
+]

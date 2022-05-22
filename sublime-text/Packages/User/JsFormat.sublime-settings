@@ -1,0 +1,12 @@
+{
+	"format_on_save": true,
+	"format_on_save_extensions": [
+		"js", 
+		"json",
+		"sublime-settings",
+		"sublime-keymap",
+		"sublime-commands",
+		"sublime-theme",
+		"sublime-menu"
+	]
+}
