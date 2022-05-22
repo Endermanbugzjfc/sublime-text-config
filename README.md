@@ -19,7 +19,7 @@ Programming workspace setups. Similar to https://github.com/SOF3/nvim-config.
 
 ## PHP
 
-| Feature                            |                                       Hotkey                                       |                                        Driven Plugin                                         |                                                                                  Driver File                                                                                   |
+| Feature                            |                                       Hotkey                                       |                                        Driver Plugin                                         |                                                                                  Driver File                                                                                   |
 | ---------------------------------- | :--------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Code linting                       |                    <kbd>Command</kbd>+<kbd>S</kbd> _(on save)_                     | [SublimeLinter-contrib-phpstan](https://github.com/Rockstar04/SublimeLinter-contrib-phpstan) |                                $PATH/[phpstan](https://github.com/Endermanbugzjfc/DotConfig/blob/master/sublime-text/Packages/User/phpstan.sh)                                 |
 | Code standard fixing               |                    <kbd>Command</kbd>+<kbd>S</kbd> _(on save)_                     |                    [Phpcs](https://github.com/benmatselby/sublime-phpcs)                     |                                                                  $COMPOSER_HOME/vendor/bin/php-cs-fixer.phar                                                                   |
@@ -35,6 +35,6 @@ Programming workspace setups. Similar to https://github.com/SOF3/nvim-config.
 | Code formatting                           | <kbd>Command</kbd>+<kbd>S</kbd> _(on save)_ |                     [GoFmt](https://github.com/noonat/sublime-gofmt)                      |  $GOROOT/goimports   |
 | Go function definition                    |               Same as global                |                        [GoGuru](http://alvarolm.github.io/GoGuru)                         |     $GOBIN/guru      |
 # Vim
-| Feature                                    |                                       Hotkey                                       |                      Driven Plugin                       |
+| Feature                                    |                                       Hotkey                                       |                      Driver Plugin                       |
 | --------- | -------- | ------- |
 | Permanently disabling all possbile methods to exit Vim which prevents me from being lazy | Vim Normal Mode: <kbd>:</kbd>, <kbd>q</kbd>, <kbd>Enter</kbd> | [https://github.com/Endermanbugzjfc/IDESleeperUltimate](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
