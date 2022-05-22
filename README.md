@@ -33,7 +33,7 @@ Programming workspace setups. Similar to https://github.com/SOF3/nvim-config.
 | go.mod / go.sum files syntax highlighting |                      -                      |                    [Gomod](https://github.com/mitranim/sublime-gomod)                     |          -           |
 | Code linting                              | <kbd>Command</kbd>+<kbd>S</kbd> _(on save)_ | [SublimeLinter-golangcilint](https://github.com/SublimeLinter/SublimeLinter-golangcilint) | $GOBIN/golangci-lint |
 | Code formatting                           | <kbd>Command</kbd>+<kbd>S</kbd> _(on save)_ |                     [GoFmt](https://github.com/noonat/sublime-gofmt)                      |  $GOROOT/goimports   |
-| Go function definition                    |               Same as global                |                        [GoGuru](http://alvarolm.github.io/GoGuru)                         |     $GOBIN/guru      |
+| Go to function definition                    |               Same as global                |                        [GoGuru](http://alvarolm.github.io/GoGuru)                         |     $GOBIN/guru      |
 # Vim
 | Feature                                    |                                       Hotkey                                       |                      Driver Plugin                       |
 | --------- | -------- | ------- |
