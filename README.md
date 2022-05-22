@@ -13,7 +13,7 @@ Programming workspace setups. Similar to https://github.com/SOF3/nvim-config.
 | Vim like keys set with some customizations |                                         -                                          |     [Vintage](https://github.com/sublimehq/Vintage)      |
 | Open sidebar                               |                          <kbd>Command</kbd>+<kbd>`</kbd>                           |                            -                             | - [x] Open sidebar: |
 | Open a terminal tab                        |                          <kbd>Command</kbd>+<kbd>O</kbd>                           | [Terminus](https://packagecontrol.io/packages/Terminus)  |
-| Open to current file#line on GitHub        |                          <kbd>Command</kbd>+<kbd>\\</kbd>                          | [GitHubinator](https://github.com/ehamiter/GitHubinator) |
+| View current file#line on GitHub        |                          <kbd>Command</kbd>+<kbd>\\</kbd>                          | [GitHubinator](https://github.com/ehamiter/GitHubinator) |
 | Go to code definition                      | Vintage Command Mode: <kbd>Shift</kbd>+<kbd>K</kbd>, <kbd>Shift</kbd>+<kbd>K</kbd> |                       Per language                       |
 | Go to next problem in file                 | Vintage Command Mode: <kbd>Shift</kbd>+<kbd>K</kbd>, <kbd>Shift</kbd>+<kbd>M</kbd> |        [SublimeLinter](http://sublimelinter.com/)        |
 
