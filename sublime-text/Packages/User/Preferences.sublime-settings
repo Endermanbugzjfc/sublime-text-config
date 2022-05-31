@@ -5,13 +5,16 @@
 	[
 		"Align Arguments",
 		"CompletePHP", // Lags intellisense.
-		"QColor", // Breaks Vintage.
-		"Statusbar Path",
-		"SublimeCodeIntel", // Lags the whole app.
+		"Golang Build", // Breaks Vintage.
+		"GoSublime",
+		"Markdown Table Formatter", // Lags the whole app.
 /*"SublimeCodeIntel",*/
 /*"SublimeCodeIntel",*/
 /*"SublimeCodeIntel",*/
 /*"Theme - Solarized Flat",*/
+		"QColor",
+		"Statusbar Path",
+		"SublimeCodeIntel",
 	],
 	"color_scheme": "Solarized (light).sublime-color-scheme",
 
@@ -27,4 +30,8 @@
 	"vintage_start_in_command_mode": true,
 
 	"word_wrap": true,
+
+	// https://forum.sublimetext.com/t/disable-automatic-loading-of-last-session/4132:
+	// "hot_exit": false,
+	// "remember_open_files": false,
 }

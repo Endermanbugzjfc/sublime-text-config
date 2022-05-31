@@ -1,7 +1,10 @@
 {
     "show_debug": true,
-	"php_cs_fixer_executable_path": "/Users/Eurus/.composer/vendor/bin/php-cs-fixer",
+    "phpcs_php_prefix_path": "php",
+	"php_cs_fixer_executable_path": "/media/eurus/U/.composer/vendor/bin/php-cs-fixer",
+    
+    "phpcs_commands_to_php_prefix": ["Fixer"],
 	"phpcs_execute_on_save": true,
     "php_cs_fixer_on_save": true,
-    "php_cs_fixer_show_quick_panel": true,
+    // "php_cs_fixer_show_quick_panel": true,
 }

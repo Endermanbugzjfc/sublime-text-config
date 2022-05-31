@@ -1,6 +1,7 @@
 {
 	"extensions":
 	[
-		"dist"
-	]
+		"dist",
+		"neon",
+	],
 }
