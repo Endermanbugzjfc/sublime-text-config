@@ -91,7 +91,6 @@ $type = $plugin
     : "library";
 $requirePocketmine = $plugin
     ? <<<EOT
-
     "pocketmine/pocketmine-mp": "^4"
     EOT
     : "";
