@@ -208,20 +208,20 @@
 		"keys": ["super+k", "super+k"],
 		"command": "sublime_linter_line_report",
 	}, {
-		"keys": ["super+g"],
-		"command": "show_overlay",
-		"args": {
-			"overlay": "goto",
-			"text": ":"
-		}
-	}, {
-		"keys": ["super+;"],
-		"command": "multicommand",
-		"args": {
-			"commands": [{
-				"command": "googler"
-			}]
-		}
+	// "keys": ["super+g"],
+	// "command": "show_overlay",
+	// "args": {
+	// 	"overlay": "goto",
+	// 	"text": ":"
+	// }
+}, {
+		// "keys": ["super+;"],
+		// "command": "multicommand",
+		// "args": {
+		// 	"commands": [{
+		// 		"command": "googler"
+		// 	}]
+		// }
 	}, {
 		"keys": ["ctrl+escape"],
 		"command": "show_panel",
@@ -229,6 +229,19 @@
 			"panel": "console",
 			"toggle": true
 		}
+	}, {
+		"keys": ["S"],
+		"command": "run_macro_file",
+		"args": {
+			"file": "res://Packages/Default/Delete Line.sublime-macro"
+		},
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
+
 	},
 
 	// PHP:
@@ -411,4 +424,28 @@
 		"command": "focus_side_bar"
 	},
 
+	// Terminus customisations:
+	{
+		"keys": ["ctrl+d"],
+		"command": "terminus_close",
+		"context": [{
+			"key": "terminus_view"
+		}]
+	},
+
+	// Vintage customisations:
+	{
+		"keys": ["tab"],
+		"command": "show_overlay",
+		"args": {
+			"overlay": "goto",
+			"text": ":"
+		},
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
+	},
 ]

@@ -3,7 +3,9 @@
     "debug": true,
     "paths": {
         "linux": [
-            "/home/eurus/app/gobin/golangci-lint",
+            "/home/k/gobin",
+            // "/home/eurus/app/gobin/golangci-lint",
+            "/home/k/gobin/golangci-lint",
             "/media/eurus/U/.composer/vendor/bin/php-cs-fixer",
         ],
         "osx": [
