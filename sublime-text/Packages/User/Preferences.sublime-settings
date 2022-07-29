@@ -19,7 +19,7 @@
 	"color_scheme": "Solarized (light).sublime-color-scheme",
 
 	// Vim behaviours:
-	"relative_line_numbers": true, // Since Sublime build 4074.
+	"relative_line_numbers": false, // Since Sublime build 4074.
 
 	"preview_on_click": false, // Not compatible with SideBarHider.
 
