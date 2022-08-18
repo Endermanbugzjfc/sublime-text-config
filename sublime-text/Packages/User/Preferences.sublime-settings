@@ -34,4 +34,6 @@
 	// https://forum.sublimetext.com/t/disable-automatic-loading-of-last-session/4132:
 	// "hot_exit": false,
 	// "remember_open_files": false,
+
+    "folder_exclude_patterns": ["dev/*"],
 }
