@@ -36,4 +36,7 @@
 	// "remember_open_files": false,
 
     "folder_exclude_patterns": ["dev/src/*"],
+
+	"auto_complete": false,
+	"close_windows_when_empty": false,
 }
