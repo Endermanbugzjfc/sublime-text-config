@@ -1,11 +1,15 @@
 [
-	// IntelliJ behaviours:
+	// Idioms:
+	// HJKL = left, down, up, right.
+	// DS = down, up.
+
+	// From Intellij:
 	{
 		"keys": ["ctrl+shift+c"],
 		"command": "copy_path"
 	},
 
-	// Sidebar:
+	// HJKL sidebar:
 	{
 		"keys": ["h"],
 		"command": "move",
@@ -50,17 +54,17 @@
 			"key": "control",
 			"operand": "sidebar_tree"
 		}]
-	}, {
-		"keys": ["super+`"],
+	}, { // Open sidebar and highlight file. (When one is in an opened editor.)
+		"keys": ["ctrl+`"],
 		"command": "focus_side_bar"
-	}, {
-		"keys": ["super+`"],
+	}, { // Close sidebar.
+		"keys": ["ctrl+`"],
 		"command": "toggle_side_bar",
 		"context": [{
 			"key": "control",
 			"operand": "sidebar_tree"
 		}]
-	}, {
+	}, { // Also close sidebar.
 		"keys": ["escape"],
 		"command": "toggle_side_bar",
 		"context": [{
@@ -69,7 +73,8 @@
 		}]
 	},
 
-	// Fast navigate: (arrow keys are so hard to reach on MacBook)
+	// DS overlays (A.K.A. command palette):
+	// (Arrow keys are so hard to reach on MacBook.)
 	{
 		"keys": ["ctrl+d"],
 		"command": "move",
@@ -94,8 +99,11 @@
 			"operator": "equal",
 			"operand": true
 		}]
-	}, {
-		"keys": ["alt+k"],
+	},
+
+	// DS auto complete: (Only `alt` works.)
+	{
+		"keys": ["alt+s"],
 		"command": "move",
 		"args": {
 			"by": "lines",
@@ -107,7 +115,7 @@
 			"operand": true
 		}]
 	}, {
-		"keys": ["alt+j"],
+		"keys": ["alt+d"],
 		"command": "move",
 		"args": {
 			"by": "lines",
@@ -120,9 +128,11 @@
 		}]
 	},
 
-	// My customizations:
 	{
-		"keys": ["g", "t"],
+		"keys": ["alt+`"],
+		"command": "next_os_tab"
+	}, {
+		"keys": ["ctrl+`"],
 		"command": "focus_neighboring_group",
 		"args": {
 			"forward": false
@@ -171,16 +181,36 @@
 			"operand": false
 		}]
 	}, {
+		"keys": ["K", "k"],
+		"command": "lsp_symbol_references",
+		"args": {
+			"side_by_side": false,
+			"fallback": false
+		},
+		"context": [{
+			"key": "lsp.session_with_capability",
+			"operator": "equal",
+			"operand": "referencesProvider"
+		}, {
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
+	}, {
 		"keys": ["ctrl+o"],
+		"command": "toggle_terminus_panel"
+	}, {
+		"keys": ["ctrl+shift+o"],
 		"command": "terminus_open",
 		"args": {
 			"cwd": "${file_path:${folder}}"
 		}
 	}, {
-		"keys": ["super+shift+s"],
+		"keys": ["ctrl+shift+s"],
 		"command": ""
 	}, {
-		"keys": ["K", "M"],
+		"keys": [";"],
 		"command": "multicommand",
 		"args": {
 			"commands": [{
@@ -205,23 +235,8 @@
 			// }
 		]
 	}, {
-		"keys": ["super+k", "super+k"],
+		"keys": ["ctrl+k", "ctrl+k"],
 		"command": "sublime_linter_line_report",
-	}, {
-	// "keys": ["super+g"],
-	// "command": "show_overlay",
-	// "args": {
-	// 	"overlay": "goto",
-	// 	"text": ":"
-	// }
-}, {
-		// "keys": ["super+;"],
-		// "command": "multicommand",
-		// "args": {
-		// 	"commands": [{
-		// 		"command": "googler"
-		// 	}]
-		// }
 	}, {
 		"keys": ["ctrl+escape"],
 		"command": "show_panel",
@@ -257,30 +272,28 @@
 			"key": "eol_selector",
 			"operand": "source.php"
 		}]
-	}, {
-		"keys": ["K", "I"],
-		"command": "implement",
-		"context": [{
-			"key": "setting.command_mode"
-		}, {
-			"key": "setting.is_widget",
-			"operand": false
-		}, {
-			"key": "eol_selector",
-			"operand": "source.php"
-		}]
 	},
-
+	// {
+	// 	"keys": ["K", "I"],
+	// 	"command": "implement",
+	// 	"context": [{
+	// 		"key": "setting.command_mode"
+	// 	}, {
+	// 		"key": "setting.is_widget",
+	// 		"operand": false
+	// 	}, {
+	// 		"key": "eol_selector",
+	// 		"operand": "source.php"
+	// 	}]
+	// },
 	// Go:
 	{
 		"keys": ["K", "K"],
 		"command": "multicommand",
 		"args": {
-
 			"commands": [{
 				"command": "find_under_expand"
 			}, {
-
 				"command": "go_guru",
 				"args": {
 					"mode": "definition"
@@ -418,24 +431,112 @@
 		"command": "select_by_index",
 		"args": {
 			"index": 10
-		}
+		},
+		"keys": ["ctrl+shift+x"],
+		"command": "toggle_tab_lock"
 	}, {
 		"keys": ["ctrl+`"],
 		"command": "focus_side_bar"
 	},
 
+	// Rust:
+	{
+		"keys": ["K", "J"],
+		"command": "rust_auto_import",
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}, {
+			"key": "eol_selector",
+			"operand": "source.rust"
+		}]
+	},
+
 	// Terminus customisations:
 	{
-		"keys": ["ctrl+d"],
-		"command": "terminus_close",
+	"keys": ["ctrl+d"],
+	"command": "terminus_close",
+	"context": [{
+		"key": "terminus_view"
+	}]
+	},
+	{
+		"keys": ["alt+s"],
+		"command": "scroll_lines",
+		"args": {
+			"amount": 5.0
+		},
+		"context": [{
+			"key": "terminus_view"
+		}]
+	}, {
+		"keys": ["alt+d"],
+		"command": "scroll_lines",
+		"args": {
+			"amount": -5.0
+		},
 		"context": [{
 			"key": "terminus_view"
 		}]
 	},
 
-	// Vintage customisations:
+	// LSP:
 	{
 		"keys": ["tab"],
+		// "command": "show_overlay",
+		// "args": {
+		// 	"overlay": "goto",
+		// 	"text": ":"
+		// },
+		"command": "lsp_code_actions",
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
+	}, {
+		// 	"keys": ["K", "N"],
+		// 	"command": "lsp_symbol_rename",
+		// 	"context": [{
+		// 		"key": "setting.command_mode"
+		// 	}, {
+		// 		"key": "setting.is_widget",
+		// 		"operand": false
+		// 	}]
+		// }, {
+		"keys": [";"],
+		"command": "lsp_goto_diagnostic",
+		"args": {
+			"uri": "$view_uri"
+		},
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
+	},
+
+	// Sublime Merge:
+	{
+		"keys": ["ctrl+m"],
+		"command": "sublime_merge_open_repo",
+		// "args": {
+		// 	"uri": "$view_uri"
+		// },
+		// "context": [{
+		// 	"key": "setting.command_mode"
+		// }, {
+		// 	"key": "setting.is_widget",
+		// 	"operand": false
+		// }]
+	},
+
+	{
+		"keys": [":"],
 		"command": "show_overlay",
 		"args": {
 			"overlay": "goto",
@@ -448,4 +549,5 @@
 			"operand": false
 		}]
 	},
+
 ]
