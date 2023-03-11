@@ -57,6 +57,9 @@
 		"SyncedSideBar",
 		"Terminus",
 		"TOML",
+		"LSP-intelephense",
+		"LSP-copilot",
+		"LSP-bash",
 	],
 	"channels": [
 		"https://packagecontrol.io/channel_v3.json",

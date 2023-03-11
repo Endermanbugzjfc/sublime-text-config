@@ -7,14 +7,13 @@
 		"CompletePHP", // Lags intellisense.
 		"Golang Build", // Breaks Vintage.
 		"GoSublime",
-		"Markdown Table Formatter", // Lags the whole app.
-/*"SublimeCodeIntel",*/
-/*"SublimeCodeIntel",*/
-/*"SublimeCodeIntel",*/
-/*"Theme - Solarized Flat",*/
-		"QColor",
-		"Statusbar Path",
-		"SublimeCodeIntel",
+		"Markdown Table Formatter", 
+		"QColor", // Breaks Vintage.
+		"Statusbar Path", // Useless.
+		"SublimeCodeIntel", // Lags the whole app.
+		"Phpcs",
+		"SublimeLinter", // Literally the hardest thing to config, way more than PM plugins.
+		"GoGuru", // Thanks to LSP.
 	],
 	"color_scheme": "Solarized (light).sublime-color-scheme",
 
@@ -39,4 +38,6 @@
 
 	"auto_complete": false,
 	"close_windows_when_empty": false,
+
+	"first_line_match": true,
 }
