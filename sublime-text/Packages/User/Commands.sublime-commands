@@ -1,34 +1,11 @@
 [{
-		"caption": "Composer Init",
-		"command": "exec",
-		"args": {
-			"shell_cmd": "php ~/U/exe/ComposerInit.php"
-		}
-}, {	"caption": "Test",
-	"command": "exec",
+	// This is the default selection in the command palette to keep me from
+	// accidentally running other commands when typing too fast.
+
+	"caption": ":! 🇭🇰 光復香港 時代革命 五大訴求 缺一不可 🇺🇦",
+	// "command": "close_other_tabs", // Mapped to Vintage Z<Space>
+	"command": "show_overlay",
 	"args": {
-		"shell_cmd": "echo {$project}"
-	}
-},
-
-	{
-		"caption": ":! 🇭🇰 光復香港 時代革命 五大訴求 缺一不可 🇺🇦",
-		"command": "close_other_tabs",
+		"overlay": "command_palette",
 	},
-
-	// {
-	// "caption": "Goto",
-	// "command": "show_overlay",
-	// "args": {
-	// "overlay": "goto",
-	// "text": ":"
-	// }
-	// },
-
-	// Plugin commands that was not registered
-	{
-		"caption": "Select Next Number",
-		"command": "select_next_number"
-	}
-
-]
+}, ]

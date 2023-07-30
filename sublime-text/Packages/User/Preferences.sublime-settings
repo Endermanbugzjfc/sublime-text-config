@@ -1,5 +1,5 @@
 {
-	"font_size": 19,
+	"font_size": 18,
 	"theme": "Adaptive.sublime-theme",
 	"ignored_packages":
 	[
@@ -15,7 +15,7 @@
 		"SublimeLinter", // Literally the hardest thing to config, way more than PM plugins.
 		"GoGuru", // Thanks to LSP.
 	],
-	"color_scheme": "Solarized (light).sublime-color-scheme",
+	"color_scheme": "Mariana.sublime-color-scheme",
 
 	// Vim behaviours:
 	"relative_line_numbers": false, // Since Sublime build 4074.

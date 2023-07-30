@@ -1,3 +1,8 @@
 {
 	"theme": "adaptive",
+    "default_config": {
+        "linux": null,    // login shell
+        "osx": null,      // login shell
+        "windows": "PowerShell"
+    },
 }
