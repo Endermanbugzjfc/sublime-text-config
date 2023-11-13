@@ -97,6 +97,102 @@
 			"operator": "equal",
 			"operand": true
 		}]
+	}, {
+		"keys": ["alt+shift+g"],
+		"command": "multicommand",
+		"args": {
+			"commands": [{
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, {
+				"command": "move",
+				"args": {
+					"by": "lines",
+					"forward": true
+				}
+			}, ]
+		},
+		"context": [{
+			"key": "overlay_visible",
+			"operator": "equal",
+			"operand": true
+		}]
+	}, {
+		"keys": ["ctrl+shift+p"], // Command palette replaced with Vim `:`.
+		"command": "show_overlay",
+		"args": {
+			"overlay": "goto",
+			"text": ":"
+		},
 	},
 
 	// Auto complete: (Only `alt` works.)
@@ -126,7 +222,7 @@
 		}]
 	},
 
-	// Clone caret:
+	// Clone caret (fake "Visual-Block" selection mode):
 	{
 		"keys": ["ctrl+shift+k"],
 		"command": "select_lines",
@@ -142,60 +238,6 @@
 		"context": [{
 			"key": "setting.command_mode"
 		}]
-	},
-
-	// Documentation:
-	{
-		"keys": ["K", "K"],
-		"command": "lsp_symbol_definition",
-		"args": {
-			"side_by_side": false,
-			"force_group": true,
-			"fallback": true,
-			"group": -1
-		},
-		"context": [{
-				"key": "setting.command_mode"
-			}, {
-				"key": "setting.is_widget",
-				"operand": false
-			},
-			// {
-			// 	"key": "lsp.session_with_capability",
-			// 	"operand": "definitionProvider"
-			// }
-		]
-	},
-
-	{
-		"keys": ["K", "k"], // The second "k" is in lowercase.
-		"command": "lsp_symbol_references",
-		"args": {
-			"side_by_side": false,
-			"fallback": true
-		},
-		"context": [{
-				"key": "setting.command_mode"
-			}, {
-				"key": "setting.is_widget",
-				"operand": false
-			},
-			// {
-			// 	"key": "lsp.session_with_capability",
-			// 	"operand": "referencesProvider"
-			// }
-		]
-	}, {
-		"keys": ["ctrl+r"],
-		"command": "lsp_document_symbols",
-		// "args": {
-		// 	"fallback": true
-		// },
-		"context": [{
-			"key": "lsp.session_with_capability",
-			"operand": "documentSymbolProvider"
-		}]
-
 	},
 
 	// Sublime Linter (tentiative):
@@ -236,24 +278,24 @@
 		}
 	},
 
-	{
-		"keys": ["S"],
-		"command": "run_macro_file",
-		"args": {
-			"file": "res://Packages/Default/Delete Line.sublime-macro"
-		},
-		"context": [{
-			"key": "setting.command_mode"
-		}, {
-			"key": "setting.is_widget",
-			"operand": false
-		}]
+	// {
+	// 	"keys": ["S"],
+	// 	"command": "run_macro_file",
+	// 	"args": {
+	// 		"file": "res://Packages/Default/Delete Line.sublime-macro"
+	// 	},
+	// 	"context": [{
+	// 		"key": "setting.command_mode"
+	// 	}, {
+	// 		"key": "setting.is_widget",
+	// 		"operand": false
+	// 	}]
 
-	},
+	// },
 
 	// PHP:
 	{
-		"keys": ["K", "J"],
+		"keys": ["alt+enter"],
 		"command": "find_use",
 		"context": [{
 			"key": "setting.command_mode"
@@ -263,21 +305,6 @@
 		}, {
 			"key": "eol_selector",
 			"operand": "source.php"
-		}]
-	},
-
-	// Rust:
-	{
-		"keys": ["K", "J"],
-		"command": "rust_auto_import",
-		"context": [{
-			"key": "setting.command_mode"
-		}, {
-			"key": "setting.is_widget",
-			"operand": false
-		}, {
-			"key": "eol_selector",
-			"operand": "source.rust"
 		}]
 	},
 
@@ -332,30 +359,20 @@
 
 	// LSP (tentative):
 	{
-		"keys": ["tab"],
-		// "command": "show_overlay",
-		// "args": {
-		// 	"overlay": "goto",
-		// 	"text": ":"
-		// },
+		"keys": ["alt+enter"],
 		"command": "lsp_code_actions",
 		"context": [{
 			"key": "setting.command_mode"
 		}, {
 			"key": "setting.is_widget",
 			"operand": false
+		}, {
+			"key": "eol_selector",
+			"operator": "not_equal",
+			"operand": "source.php"
 		}]
 	}, {
-		// 	"keys": ["K", "N"],
-		// 	"command": "lsp_symbol_rename",
-		// 	"context": [{
-		// 		"key": "setting.command_mode"
-		// 	}, {
-		// 		"key": "setting.is_widget",
-		// 		"operand": false
-		// 	}]
-		// }, {
-		"keys": ["'", "'"],
+		"keys": ["shift+f12"],
 		"command": "lsp_goto_diagnostic",
 		"args": {
 			"uri": "$view_uri"
@@ -367,7 +384,16 @@
 			"operand": false
 		}]
 	}, {
-		"keys": [";"],
+		"keys": ["f12"],
+		"command": "lsp_show_diagnostics_panel",
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
+	}, {
+		"keys": ["K"],
 		"command": "lsp_hover",
 		"context": [{
 			"key": "setting.command_mode"
@@ -375,30 +401,63 @@
 			"key": "setting.is_widget",
 			"operand": false
 		}]
+	}, {
+		"keys": [";"],
+		"command": "lsp_symbol_definition",
+		"args": {
+			"side_by_side": false,
+			"force_group": true,
+			"fallback": true,
+			"group": -1
+		},
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}, ]
+	}, {
+		"keys": ["'"],
+		"command": "lsp_symbol_references",
+		"args": {
+			"side_by_side": false,
+			"fallback": true
+		},
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}, ]
+	}, {
+		"keys": ["ctrl+r"],
+		"command": "lsp_document_symbols",
+		"context": [{
+			"key": "lsp.session_with_capability",
+			"operand": "documentSymbolProvider"
+		}, {
+			"key": "eol_selector",
+			"operator": "not_equal",
+			"operand": "source.php",
+		}]
 	},
 
 	// Sublime Merge:
 	{
 		"keys": ["ctrl+m"],
 		"command": "sublime_merge_open_repo",
-		// "args": {
-		// 	"uri": "$view_uri"
-		// },
-		// "context": [{
-		// 	"key": "setting.command_mode"
-		// }, {
-		// 	"key": "setting.is_widget",
-		// 	"operand": false
-		// }]
 	},
 
+	// Vim fix:
 	{
-		"keys": ["ctrl+shift+p"],
-		"command": "show_overlay",
-		"args": {
-			"overlay": "goto",
-			"text": ":"
-		},
+		"keys": ["tab"],
+		"command": "auto_complete",
+		"context": [{
+			"key": "setting.command_mode"
+		}, {
+			"key": "setting.is_widget",
+			"operand": false
+		}]
 	},
 
 	// Vim ctrl-features replications:
@@ -416,6 +475,16 @@
 			"operand": false,
 			"match_all": true
 		}]
+	}, {
+		"keys": ["ctrl+t"],
+		"command": "show_overlay",
+		"args": {
+			"overlay": "goto",
+			"text": "@"
+		}
+	}, {
+		"keys": ["ctrl+r"],
+		"command": "redo"
 	},
 
 	// Vim folding (customisations for the "z" key):
