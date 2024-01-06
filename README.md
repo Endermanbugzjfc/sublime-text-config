@@ -1,7 +1,7 @@
 # Reason of archiving
 I have fully migrated to [Vim](#actual-vim) due to the lack of functionalities in Sublime Text. I got in touch with it in 2019, I lapped all these great old memories. It is time to say goodbye.
 
-Note: I still use [Sublime Merge](https://www.sublimemerge.com/), a performance-friendly and nice-looking Git GUI, which I strongly recommend.
+Note: I still use [Sublime Merge](https://www.sublimemerge.com/), a highly optimised and nice-looking Git GUI, which I strongly recommend.
 
 # DotConfig
 
