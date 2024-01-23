@@ -44,4 +44,4 @@ Programming workspace setups. Similar to https://github.com/SOF3/nvim-config.
 | --------- | -------- | ------- |
 | Permanently disabling all possbile methods to exit Vim which prevents me from being lazy | Vim Normal Mode: <kbd>:</kbd>, <kbd>q</kbd>, <kbd>Enter</kbd> | [https://github.com/Endermanbugzjfc/IDESleeperUltimate](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
 # Actual Vim
-https://github.com/Endermanbugzjfc/nvim_config
+https://github.com/Endermanbugzjfc/nvim-config
